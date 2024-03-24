@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a {
+    cursor: pointer;
+}
+
+/* Navbar Styling */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(18, 18, 18, 0.8);
+    width: 100%;
+    height: 44px;
+    gap: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    backdrop-filter: saturate(120%) blur(20px);
+}
+.logo {
+    width: 18px;
+}
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.navbar-list li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(195, 192, 192, 0.8);
+    font-weight: 400px;
+    letter-spacing: -.01em;
+    line-height: 1;
+}
+.navbar-list li a:hover {
+    transition: color 1s ease;
+    color: rgb(233, 231, 231);
+}
+.navbar-list li {
+    list-style: none;
+}
+.fa-solid {
+    filter: invert(70%);
+}
+.fa-solid {
+    filter: invert(70%);
+}
+
+/* Hero Section Styling*/
+
+.hero-section {
+    width: 100%;
+    height: 600px;
+    background-image: url(background/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    gap:9px;
+    height: 250px;
+    color: white;
+}
+figure img {
+    display: inline-block;
+    height: 330px;
+    width: 100%;
+}
+.bg-h2 {
+    font-size: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bg-h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.fa-circle-chevron-right {
+    filter: invert(5%);
+    font-size: 16px;
+}
+.bg-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    cursor: pointer;
+}
+.bg-links a{
+    font-size: 18px;
+    color: #2997ff;
+    text-decoration: none;
+}
+.bg-links a:hover {
+    text-decoration: underline;
+}
+
+/* Second-section Styling */
+
+.second-section {
+    width: 100%;
+    height: 520px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: url(homepage\ imgs/iphone15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.scnd-sec-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 50px;
+}
+.bg-p {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.vision-pro-Section {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    background: url(homepage\ imgs/vision-pro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.vision-pro-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 35px;
+}
+.apple {
+    width: 38px;
+    filter: invert(100%);
+}
+
+/* Third-Section Styling*/
+
+.third-section {
+    width: 100%;
+    height: 500px;
+    margin: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.watch-sec {
+    margin: 10px;
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    z-index: -2;
+    background-image: url(homepage\ imgs/watchh.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.watch-sec-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 40px;
+}
+.watch-sec-h2 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.watch-sec-p1 {
+    color:red;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.watch-sec-p2 {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.watch-apple {
+    position: relative;
+    top: 2px;
+    width: 30px;
+}
+.macbook-sec {
+    margin: 10px;
+    width: 50%;
+    height: 100%;
+    background: url(homepage\ imgs/macbook.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.macbook-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 40px;
+}
+.mackbook-h2 {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mackbook-p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.bg-links .small-a {
+    font-size: 14px;
+    color: #2997ff;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 4;
+}
+
+/* Fourth-section Styling*/
+
+.fourth-section {
+    width: 100%;
+    height: 500px;
+    margin: 12px 0 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ipad-sec {
+    margin: 10px;
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    z-index: -2;
+    background-image: url(homepage\ imgs/ipad.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ipad-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 40px;
+}
+.ipad-sec-h2 {
+    color: black;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ipad-sec-p{
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.airpod-sec {
+    margin: 10px;
+    width: 50%;
+    height: 100%;
+    background: url(homepage\ imgs/airpods.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.airpod-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 40px;
+} 
+.airpod-sec-h2 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.airpod-sec-p{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* Fifth-section Styling*/
+
+.fifth-section {
+    width: 100%;
+    height: 500px;
+    margin: 12px 0 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards-sec {
+    background-color: white;
+    width: 50%;
+    margin: 10px;
+    height: 100%;
+    z-index: -2;
+    background-image: url(homepage\ imgs/cards.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.cards-part {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 40px;
+}
+.cards-sec-h2 {
+    color: black;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cards-sec-p{
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.trade-in-sec {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    z-index: -2;
+    background-image: url(homepage\ imgs/trade-in.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.trade-in-part {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 40px;
+}
+.trade-in-sec-h2 {
+    color: black;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.trade-in-sec-p{
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.black-apple {
+    width: 26px;
+    filter: invert(100%);
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+}
+.footer-div1 {
+    
+    padding: 20px;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    border-bottom: 1px solid rgb(216, 215, 215);
+}
+.div1-p {
+    color: rgb(151, 151, 151);
+    font-size: 12px;
+    line-height: 15px;
+}
+.footer-div1-a {
+    color: rgb(83, 82, 82);
+}
+.footer-div2 {
+    padding: 20px;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+}
+
+.directory-column-sec1, .directory-column-sec2, .directory-column-sec3, .directory-column-sec4, .directory-column-sec5 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+.dcs ul li a:hover {
+    text-decoration: underline;
+}
+.sec1-div-lists {
+    list-style: none;
+    line-height: 25px;
+}
+.sec1-div-lists a {
+    font-size: 12px;
+    text-decoration: none;
+    list-style: none;
+    color: grey;
+}
+.sec1-div-lists .lists-heading {
+    color: rgb(88, 87, 87);
+}
+.sec1-div-lists .lists-heading:hover {
+    text-decoration: none;
+}
+.footer-div3 {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin: auto;
+    font-size: 12px;
+    color: grey;
+    border-bottom: 1px solid rgb(216, 215, 215);
+    padding: 20px;
+    letter-spacing: 1px;
+}
+.footer-div3-a {
+    color: rgb(38, 99, 241);
+}
+.footer-div4 {
+    color: gray;
+    padding: 20px 50px 20px 55px;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.footer-div4-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-right: 120px;
+}
+.footer-div4-list li {
+    list-style: none;
+    
+}
+.footer-div4-list a {
+    text-decoration: none;
+    color: gray;
+}
+.footer-div4-list a:hover {
+    text-decoration: underline;
+}
+.list-border {
+    border-left: 1px solid grey;
+    padding-left: 7px;
+}
+
