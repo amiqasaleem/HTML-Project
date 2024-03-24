@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Shadows+Into+Light&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body::before {
+    background: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url(bg.jpg);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Navbar */
+
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.upper-navbar {
+    width: 100%;
+    height: 20px;
+    
+}
+.upper-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(31, 165, 31);
+    width: 100%;
+    height: 30px;
+    font-size: 11px;
+    color: white;
+}
+.bxs-envelope{
+    margin-right: 5px;
+}
+.bxs-phone{
+    margin-right: 5px;
+} 
+.lower-navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px rgb(135, 134, 134);
+}
+.logo {
+    font-weight: bold;
+    font-size: 21px;
+    color: rgb(31, 165, 31);
+    text-transform: uppercase;
+    margin-left: 150px;
+}
+.navbar {
+    display: flex;
+}
+.navbar li {
+    margin-right: 70px;
+}
+.navbar li a {
+    color: black;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* Hero-section */
+
+.hero-section {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner {
+    margin-top: 80px;
+    text-align: center;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 87px;
+    color: white;
+    line-height: 89px;
+}
+.banner-p {
+    margin-top: 18px;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 13px;
+}
+.banner-btn {
+    margin-top: 30px;
+    padding: 8px;
+    width: 140px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color:  rgb(31, 165, 31);
+}
+.banner-btn:hover {
+    background:transparent;
+    color: rgb(31, 165, 31);
+    border: 1px solid rgb(31, 165, 31);
+}
+
+/* Cards-section */
+
+.cards-section {
+    width: 74%;
+    margin: auto;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+}
+.card1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 24%;
+    height: 180px;
+    gap: 12px;
+    
+}
+.card1-logo {
+    /* background-color: greenyellow; */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.card1-logo:hover {
+    background-color: green;
+}
+.num1 {
+    background-color: rgb(138, 242, 138);
+}
+.fa-truck-fast{
+    font-size: 50px;
+    position: relative;
+    left: 18px;
+    top: 25px;
+    filter: invert(100);
+}
+.num2 {
+    background-color: rgb(182, 182, 246);
+}
+.freshProducts{
+    width: 75px;
+    position: relative;
+    left: 13px;
+    top: 12px;
+    filter: invert(100);
+}
+.num3 {
+    background-color: rgb(245, 153, 245);
+}
+.badge {
+    width: 75px;
+    position: relative;
+    left: 13px;
+    top: 12px;
+    filter: invert(100);
+}
+.num4 {
+    background-color: rgb(238, 170, 170);
+}
+.support {
+    width: 65px;
+    position: relative;
+    left: 18px;
+    top: 12px;
+    filter: invert(100);
+}
+.cards-sec-p {
+    font-size: 12px;
+    color: grey;
+}
+h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Products-section */
+
+.products-section {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.ps-boxes {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1 {
+    height: 200px;
+    width: 28%;
+    background: url(products-section\ img/fruits.jpg);
+    background-size: cover;
+    position: relative;
+}
+.box1-p {
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+.box2 {
+    height: 200px;
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.box2-h6 {
+    color: green;
+    font-size: 24px;
+    /* font-weight: bold; */
+    font-family: "Fredoka", sans-serif;
+}
+.box2-p {
+    color: grey;
+    margin-top: 10px;
+}
+.products-section-btn {
+    margin-top: 15px;
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    padding: 6px 15px 6px 15px;
+    font-size: 15px;
+    border: none;
+}
+.products-section-btn:hover {
+    background: transparent;
+    color: green;
+    border: 1px solid green;
+}
+.box3 {
+    height: 200px;
+    width: 28%;
+    background: url(products-section\ img/juices.jpg);
+    background-size: cover;
+    position: relative;
+
+}
+.box3-p {
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+.box4 {
+    height: 200px;
+    width: 28%;
+    background: url(products-section\ img/both.jpg);
+    background-size: cover;
+    position: relative;
+}
+.box4-p {
+    background-color: green;
+    color: white;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+.box5 {
+    background-color: rgb(66, 3, 14);
+    height: 200px;
+    width: 28%;
+    background: url(products-section\ img/vegetables.jpg);
+    background-size: cover;
+}
+.box6 {
+    background-color: rgb(34, 3, 101);
+    width: 28%;
+    height: 200px;
+    background: url(products-section\ img/dryfruits.jpg);
+    background-size: cover;
+    position: relative;
+}
+.box6-p {
+    background-color: green;
+    color: white;
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Featured Products Section */
+
+.featured-product-section {
+    height: 140vh;
+}
+.featured-products-text {
+    padding: 6rem;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.featured-product-p1 {
+    font-family: "Fredoka", sans-serif;
+    color: black;
+    font-size: 21px;
+    padding-bottom: 25px;
+
+}
+.featured-products-pp {
+    padding-bottom: 35px;
+    font-size: 40px;
+    color: green;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 900px;
+}
+.featured-product-p2 {
+    color: grey;
+}
+
+/* Products-prices-sec */
+
+.products-prices-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 75%; 
+}
+.products-prices {
+    margin: 20px;
+    width: 20%;
+    height: 250px;
+    border: 1px solid rgb(148, 245, 143);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 17px;
+}
+.bellPepper {
+    cursor: pointer;
+    width: 80%;
+    transition: all 0.2s ease-in;
+}
+.bellPepper:hover {
+    transform: scale(1.1,1.1);
+}
+.strawberry {
+    cursor: pointer;
+    width: 80%;
+    transition: all 0.2s ease-in;
+}
+.strawberry:hover {
+    transform: scale(1.1,1.1);
+}
+.greenBeans {
+    cursor: pointer;
+    width: 80%;
+    transition: all 0.2s ease-in;
+}
+.greenBeans:hover {
+    transform: scale(1.1,1.1);
+}
+.purpleCabbage {
+    cursor: pointer;
+    width: 80%;
+    transition: all 0.2s ease-in;
+}
+.purpleCabbage:hover {
+    transform: scale(1.1,1.1);
+}
+.tomato {
+    cursor: pointer;
+    width: 80%;
+    transition: all 0.2s ease-in;
+}
+.tomato:hover {
+    transform: scale(1.1,1.1);
+}
+.brocolli {
+    cursor: pointer;
+    width: 60%;
+    transition: all 0.2s ease-in;
+}
+.brocolli:hover {
+    transform: scale(1.1,1.1);
+}
+.carrots {
+    cursor: pointer;
+    width: 70%;
+    transition: all 0.2s ease-in;
+}
+.carrots:hover {
+    transform: scale(1.1,1.1);
+}
+.fresh-juices {
+    cursor: pointer;
+    width: 52%;
+    transition: all 0.2s ease-in;
+}
+.fresh-juices:hover {
+    transform: scale(1.1,1.1);
+}
+.rupees {
+    color: green;
+    font-size: 14px;
+}
+.product-p {
+    font-size: 14px;
+}
+
+/* Deal of the day Section */
+
+.dealDay-sec{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    background: url(veg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat12
+}
+.dd-p1{
+    color: rgb(29, 248, 5);
+    font-size: 20px;
+    font-family: "Fredoka", sans-serif;
+    padding-bottom: 30px;
+    padding-top: 140px;
+    padding-left: 120px;
+}
+.dd-p2{
+    color: rgb(3, 5, 3);
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-left: 120px;
+}
+.dd-p3{
+    color: white;
+    padding-bottom: 30px;
+    padding-left: 120px;
+}
+.dd-a {
+    font-family: "Fredoka", sans-serif;
+    font-size: 33px;
+    font-style: italic;
+    padding-bottom: 30px;
+    padding-left: 120px;
+    text-decoration: none;
+    color: rgb(4, 249, 4);
+}
+.dd-p5 {
+    font-family: "Fredoka", sans-serif;
+    font-size: 19px;
+    color: rgb(8, 252, 8);
+    padding-bottom: 30px;
+    padding-left: 120px;
+    padding-top: 20px;
+}
+
+/* Testimony Section */
+
+.testimony {
+    /* background-color: rgb(221, 255, 215); */
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.testimony-p1 {
+    color:green;
+    font-size: 22px;
+    font-family: "Fredoka", sans-serif;
+
+}
+.testimony-p2 {
+    font-size: 43px;
+    font-weight: 900px;
+}
+.testimony-p3 {
+    width: 50%;
+    color: grey;
+    text-align: center;
+}
+
+/* Customer Review Section */
+
+.customer-reviews {
+    height: 520px;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cus {
+    margin-left: 60px;
+}
+.review1 {
+    width: 25%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: green;
+    color: white;
+    padding: 0px 8px 0px 8px;
+    border-radius: 30px;
+    
+}
+.review1-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+.review1-p1 {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 33px;
+    margin-bottom: 10px;
+}
+.review1-p3 {
+    color: rgb(210, 208, 208);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.review2 {
+    width: 25%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: green;
+    color: white;
+    padding: 0px 8px 0px 8px;
+    border-radius: 30px;
+}
+.review2-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+.review2-p1 {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 33px;
+    margin-bottom: 10px;
+}
+.review2-p3 {
+    color: rgb(210, 208, 208);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.review3 {
+    width: 25%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: green;
+    color: white;
+    padding: 0px 8px 0px 8px;
+    border-radius: 30px;
+}
+.review3-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+.review3-p1 {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 33px;
+    margin-bottom: 10px;
+}
+.review3-p3 {
+    color: rgb(210, 208, 208);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+/* Logos-Section */
+
+.logos-section {
+    width: 75%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.allLogo {
+    width: 50%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.logo-img-1 {
+    width: 100%;
+    height: 70px;
+}
+.logo-img-2 {
+    width: 200%;
+    height: 95px;
+}
+.logo-img-3 {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 70px;
+}
+.logo-img-4 {
+    width: 60%;
+    height: 50px;
+}
+.logo-img-5 {
+    width: 100%;
+    height: 55px;
+}
+
+/* Newsletter section */
+
+.newsletter-section {
+    background-color:rgb(232, 245, 231);
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.newsletter-section-p1 {
+    font-size: 22px;
+}
+.newsletter-section-p2 {
+    font-size: 16px;
+    color: rgb(102, 99, 99);
+}
+.emailSearch {
+    width: 450px;
+    padding: 14px;
+    border: none;
+}
+.subscribe-btn {
+    padding: 14px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer-section-01 {
+    /* background-color: rgb(39, 65, 39); */
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerDivs {
+    width: 25%;
+    margin: 20px;
+    height: 300px;
+}
+.foot-sec1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+.foot1-p1 {
+    font-size: 18px;
+    padding: 30px 14px 0px 14px;
+    font-weight: 900px;
+    margin-bottom: 20px;
+    color: green;
+}
+.foot1-p2 {
+    font-size: 14px;
+    padding: 0px 14px 0px 14px;
+}
+.footSecImgs {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 42px;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.social {
+    cursor: pointer;
+    height: 35%;
+}
+.foot-sec2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 48px;
+}
+.menu {
+    font-size: 18px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    color: green;
+}
+.foot-sec2P {
+    cursor: pointer;
+    margin-left: 60px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.foot-sec3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.footSec3-help {
+    font-size: 18px;
+    padding-top: 48px;
+    margin-left: 10px;
+    color: green;
+}
+.help-list {
+    width: 100%;
+}
+.help-list li {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.foot-sec4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.footSec4-p1 {
+    font-size: 18px;
+    padding-top: 48px;
+    margin-left: 10px;
+    color: green;
+}
+.info1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.info1-p {
+    width: 75%;
+    margin-left: 10px;
+    font-size: 14px;
+    pad: 0px 10px 0px 40px;
+    font-size: 13px;
+}
+.info2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.info2-p {
+    width: 85%;
+    margin-left: 10px;
+    font-size: 14px;
+    pad: 0px 10px 0px 40px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.info3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.info3-p {
+    width: 75%;
+    margin-left: 10px;
+    font-size: 14px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.footSec4Div {
+    padding-left: 20px;
+}
+.lastDiv {
+    font-size: 15px;
+    width: 100%;
+    height: 120px;
+    /* background-color: rgb(184, 241, 184); */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.amiqa {
+    cursor: pointer;
+    color: green;
+}
